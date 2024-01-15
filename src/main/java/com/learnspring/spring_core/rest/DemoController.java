@@ -9,13 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class DemoController {
     private Coach myCoach;
 
-    // Here Spring will look into the app for a class that uses the Coach interface (Spring Bean that annotated by
-    // @Component and will inject it to this demo controller to use it when reaching the /dailyworkout EP.
-
-    // I think we will only dealing with the interfaces and spring will deal with the DI
-    // of the classes that uses these interfaces
+    // Setter Injection
     @Autowired
-    public DemoController(Coach theCoach) {
+    public void setCoach(Coach theCoach) {
         myCoach = theCoach;
     }
 
