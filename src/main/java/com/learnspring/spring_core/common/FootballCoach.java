@@ -3,9 +3,9 @@ package com.learnspring.spring_core.common;
 import org.springframework.stereotype.Component;
 
 @Component
-public class CricketCoach implements Coach {
+public class FootballCoach implements Coach {
     @Override
     public String getDailyWorkout() {
-        return "KEEP PRACTICING FROM THE CRICKET COACH";
+        return "Keep Practicing From Football Coach";
     }
 }
